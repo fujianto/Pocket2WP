@@ -28,9 +28,8 @@
 	if(!is_null($inputURL)){
 		$uploadedURL = getListURL($inputURL);
 		$uploadedTags = getListTags($inputURL);
-		$uploadedTitle = getListTitle($inputURL);
 		
-		importToWordPress(1, $uploadedURL, array('Pocket'), $uploadedTags);
+		importToWordPress(0, $uploadedURL, array('Pocket'), $uploadedTags);
 	}
 	
 	// importToWordPress($bulkURL);		
